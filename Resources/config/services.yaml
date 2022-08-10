@@ -1,0 +1,10 @@
+services:
+    tandrewcl\ApiResponseConvertBundle\Handler\ResponseHandler:
+        autowire: true
+        autoconfigure: true
+        arguments:
+            $responseProcessors: !tagged_iterator { tag: api_response.converter, index_by: supportedClass }
+
+    _instanceof:
+        tandrewcl\ApiResponseConvertBundle\Converter\ResponseConverterInterface:
+            tags: { name: api_response.converter }

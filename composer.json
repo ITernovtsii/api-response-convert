@@ -1,0 +1,27 @@
+{
+  "name": "tandrewcl/api-response-convert",
+  "type": "symfony-bundle",
+  "description": "Simple json response converter",
+  "keywords": [
+    "response converter. json response converter. symfony response converter"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrew Ternovtsii",
+      "email": "at@conciliolabs.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0.2",
+    "symfony/http-foundation": "^6.0"
+  },
+  "suggest": {
+    "symfony/translation": "To use translated messages in responses"
+  },
+  "autoload": {
+    "psr-4": {
+      "tandrewcl\\ApiResponseConvertBundle\\": ""
+    }
+  }
+}
